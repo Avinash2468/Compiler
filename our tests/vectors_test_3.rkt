@@ -1,0 +1,5 @@
+(let ([myv (vector 20 (vector #t 22) 1 #f)])
+  (if (not (vector-ref myv 3))
+    (+ (vector-ref myv 0)
+       (vector-ref (vector-ref myv 1) 1))
+    1))
